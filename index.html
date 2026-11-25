@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashrith — Portfolio</title>
+  <meta name="description" content="Ashrith is an AI engineering student who turns models into working systems. Featured: SignalMind, JobFlow AI, SAGAR-Net, AutoMark, Alzheimer's MRI detection and LicenseLock.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <div class="strip">
+    <div class="page strip-inner label">
+      <span>Portfolio</span>
+      <span class="hide-sm">Edition of <span class="year"></span></span>
+      <span class="hide-sm">AI · Systems · Deep learning</span>
+      <span class="status"><i></i>Open to internships</span>
+    </div>
+  </div>
+
+  <header class="masthead">
+    <div class="page masthead-inner">
+      <a href="#top" class="wordmark">Ashrith<span>.</span></a>
+      <nav class="nav label">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button class="theme" id="themeToggle" aria-label="Switch light or dark">
+          <span class="theme-ink"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- COVER -->
+    <section class="page cover">
+      <div class="cover-head">
+        <h1 class="display">
+          <span class="line"><span>Building AI</span></span>
+          <span class="line"><span>that leaves the</span></span>
+          <span class="line"><span><em>notebook.</em></span></span>
+        </h1>
+      </div>
+
+      <figure class="portrait" id="portrait">
+        <div class="portrait-frame">
+          <img src="photo.jpg" alt="Portrait of Ashrith" onerror="this.closest('.portrait').classList.add('no-photo')">
+          <div class="monogram" aria-hidden="true"><span>A<i>.</i></span></div>
+        </div>
+        <figcaption><span class="label">Fig. 1</span> Ashrith, AI engineering student at Amrita University.</figcaption>
+      </figure>
+
+      <div class="cover-foot">
+        <p class="standfirst">
+          <span class="dropcap">A</span>shrith turns machine-learning models into software that actually runs —
+          with an API around it, tracing to see what it's doing, guardrails so it can't do damage,
+          and containers so it runs anywhere. Six of those projects are featured in this edition.
+        </p>
+
+        <nav class="contents" aria-label="Contents">
+          <p class="label">In this edition</p>
+          <ol>
+            <li><a href="#signalmind"><span class="n">01</span><span class="t">SignalMind</span><span class="dots"></span><span class="k">Observability</span></a></li>
+            <li><a href="#jobflow"><span class="n">02</span><span class="t">JobFlow AI</span><span class="dots"></span><span class="k">Agents</span></a></li>
+            <li><a href="#sagar"><span class="n">03</span><span class="t">SAGAR-Net</span><span class="dots"></span><span class="k">Forecasting</span></a></li>
+            <li><a href="#automark"><span class="n">04</span><span class="t">AutoMark</span><span class="dots"></span><span class="k">Full-stack</span></a></li>
+            <li><a href="#alzheimers"><span class="n">05</span><span class="t">Alzheimer's MRI</span><span class="dots"></span><span class="k">Imaging</span></a></li>
+            <li><a href="#licenselock"><span class="n">06</span><span class="t">LicenseLock</span><span class="dots"></span><span class="k">Security</span></a></li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="work">
+      <div class="page section-title">
+        <h2 class="label">Selected work</h2>
+        <span class="rule"></span>
+        <span class="label muted">Six features</span>
+      </div>
+
+      <!-- 01 -->
+      <article class="page feature" id="signalmind">
+        <div class="feature-num" aria-hidden="true">01</div>
+        <div class="feature-text">
+          <p class="kicker label">Observability · Python</p>
+          <h3>SignalMind</h3>
+          <p class="dek">An observability platform that reads a system's traces and metrics, works out the likely root cause of an incident, and proposes a fix — which has to pass a policy check before it runs.</p>
+          <ul class="facts">
+            <li>A FastAPI analysis service with typed telemetry models and root-cause scoring.</li>
+            <li>A full OpenTelemetry pipeline — Collector into Prometheus, Tempo and Loki, read in Grafana — brought up with Docker Compose.</li>
+            <li>An MCP server that hands incident context and guarded remediation tools to AI agents.</li>
+            <li>LangSmith tracing on every analysis, plus span waterfall and deploy-impact views.</li>
+          </ul>
+          <p class="stack label">FastAPI · OpenTelemetry · Prometheus · Grafana · LangSmith · MCP · Docker</p>
+          <a class="read" href="https://github.com/ashrith-developer/ai-observability-software" target="_blank" rel="noopener">Read the code</a>
+        </div>
+        <figure class="feature-fig">
+          <svg viewBox="0 0 400 260" aria-hidden="true">
+            <path class="ink thin" d="M40 30 V220 H380"/>
+            <path class="ink faint" d="M40 180 H380 M40 140 H380 M40 100 H380" stroke-dasharray="2 5"/>
+            <path class="ink d" pathLength="1" d="M40 196 L80 190 L120 194 L160 184 L200 188 L240 174 L268 82 L292 70 L316 164 L350 170 L380 166"/>
+            <circle class="acc-fill" cx="292" cy="70" r="6"/>
+            <circle class="acc" cx="292" cy="70" r="13"/>
+            <path class="acc" d="M302 60 L316 42"/>
+            <text class="note" x="306" y="34">root cause</text>
+            <text class="cap" x="48" y="24">P99 LATENCY</text>
+            <text class="cap" x="330" y="238">TIME</text>
+          </svg>
+          <figcaption><span class="label">Fig. 2</span> A latency spike, traced back to its most likely cause.</figcaption>
+        </figure>
+        <aside class="margin-note">If the backend is down, the dashboard falls back to a browser simulator — so the demo never breaks.</aside>
+      </article>
+
+      <!-- 02 -->
+      <article class="page feature flip" id="jobflow">
+        <div class="feature-num" aria-hidden="true">02</div>
+        <div class="feature-text">
+          <p class="kicker label">Agents · Python</p>
+          <h3>JobFlow AI</h3>
+          <p class="dek">An agent that finds job listings and fills out the applications itself — driving a real browser and answering each form's questions from a profile and resume.</p>
+          <ul class="facts">
+            <li>A LangGraph state machine steering a Playwright browser session, step by step.</li>
+            <li>Gemini writes the answers to application questions using profile and resume context.</li>
+            <li>A web UI streams live logs and a screenshot of every step the agent takes.</li>
+            <li>Containerised with Docker and deployed to Render through GitHub Actions.</li>
+          </ul>
+          <p class="stack label">LangGraph · Playwright · Gemini · Docker · GitHub Actions</p>
+          <a class="read" href="https://github.com/ashrith-developer/automated-jobs-applying-agent-beta-" target="_blank" rel="noopener">Read the code</a>
+        </div>
+        <figure class="feature-fig">
+          <svg viewBox="0 0 400 260" aria-hidden="true">
+            <g class="box"><rect x="20" y="104" width="78" height="46"/><text x="59" y="132">search</text></g>
+            <g class="box"><rect x="124" y="104" width="78" height="46"/><text x="163" y="132">read</text></g>
+            <g class="box hot"><rect x="228" y="104" width="78" height="46"/><text x="267" y="132">fill</text></g>
+            <g class="box"><rect x="332" y="104" width="56" height="46"/><text x="360" y="132">send</text></g>
+            <path class="ink d" pathLength="1" d="M98 127 H120 M202 127 H224 M306 127 H328"/>
+            <path class="ink" d="M114 122 L120 127 L114 132 M218 122 L224 127 L218 132 M322 122 L328 127 L322 132"/>
+            <path class="acc d" pathLength="1" d="M267 150 C267 210 163 210 163 154"/>
+            <path class="acc" d="M158 160 L163 152 L168 160"/>
+            <text class="note" x="186" y="222">retry, next card</text>
+            <path class="ink faint" d="M267 104 V60"/>
+            <text class="note ink-note" x="210" y="50">screenshot, every step</text>
+            <text class="cap" x="20" y="30">AGENT LOOP</text>
+          </svg>
+          <figcaption><span class="label">Fig. 3</span> The agent's loop: search, read, fill, send — retry when a form fights back.</figcaption>
+        </figure>
+        <aside class="margin-note">Every step is screenshotted, so you can watch exactly what the agent did.</aside>
+      </article>
+
+      <!-- 03 -->
+      <article class="page feature" id="sagar">
+        <div class="feature-num" aria-hidden="true">03</div>
+        <div class="feature-text">
+          <p class="kicker label">Forecasting · PyTorch</p>
+          <h3>SAGAR-Net</h3>
+          <p class="dek">A graph neural network that forecasts coastal sea levels at twenty tide-gauge stations, from six hours to three days ahead.</p>
+          <ul class="facts">
+            <li>Combines GESLA tide-gauge records, ERA5 weather reanalysis and GEBCO seabed depth.</li>
+            <li>Dilated causal convolutions read each station's history; GATv2 graph attention lets stations learn from their neighbours.</li>
+            <li>Looks back 72 hours to predict five horizons: 6, 12, 24, 48 and 72 hours.</li>
+            <li>Tested leave-one-station-out, to see how it does at a station it has never seen.</li>
+          </ul>
+          <p class="stack label">PyTorch · PyTorch Geometric · Pandas · NumPy</p>
+          <a class="read" href="https://github.com/ashrith-developer/sagar" target="_blank" rel="noopener">Read the code</a>
+        </div>
+        <figure class="feature-fig">
+          <svg viewBox="0 0 400 260" aria-hidden="true">
+            <path class="ink d" pathLength="1" d="M10 150 C60 120 90 170 140 140 S220 100 260 130 S340 160 390 120"/>
+            <path class="ink faint" d="M10 172 C60 150 90 192 140 164 S220 126 260 154 S340 182 390 146 M10 194 C60 174 90 214 140 188 S220 152 260 178 S340 204 390 172 M10 216 C60 198 90 236 140 212 S220 178 260 202 S340 226 390 198"/>
+            <path class="ink thin" d="M40 128 L110 104 L170 120 L240 82 L300 110 L360 96 M110 104 L120 60 L240 82 M170 120 L240 82"/>
+            <g class="node"><circle cx="40" cy="128" r="5"/><circle cx="110" cy="104" r="5"/><circle cx="120" cy="60" r="5"/><circle cx="240" cy="82" r="5"/><circle cx="300" cy="110" r="5"/><circle cx="360" cy="96" r="5"/></g>
+            <circle class="acc-fill" cx="170" cy="120" r="6"/>
+            <circle class="acc" cx="170" cy="120" r="13"/>
+            <text class="note" x="186" y="52">+6h … +72h</text>
+            <path class="acc" d="M178 110 L196 60"/>
+            <text class="cap" x="20" y="30">STATIONS · COAST · SEA</text>
+          </svg>
+          <figcaption><span class="label">Fig. 4</span> Tide-gauge stations as a graph — each one learns from its neighbours.</figcaption>
+        </figure>
+        <aside class="margin-note"><em>Sagar</em> — the Sanskrit word for ocean.</aside>
+      </article>
+
+      <!-- 04 -->
+      <article class="page feature flip" id="automark">
+        <div class="feature-num" aria-hidden="true">04</div>
+        <div class="feature-text">
+          <p class="kicker label">Full-stack · JavaScript</p>
+          <h3>AutoMark</h3>
+          <p class="dek">A platform for generating marketing content with AI. Sign in, describe what you need, and keep a history of everything you've produced — while Kafka handles the slow work in the background.</p>
+          <ul class="facts">
+            <li>A React, Vite and Tailwind front end with protected routes and a content history.</li>
+            <li>An Express API on MongoDB, with JWT and Google sign-in.</li>
+            <li>Copy generated through Groq and Google Gemini.</li>
+            <li>Kafka producers and consumers for analytics updates and sign-up notifications.</li>
+          </ul>
+          <p class="stack label">React · Express · MongoDB · Kafka · Groq · Gemini</p>
+          <a class="read" href="https://github.com/ashrith-developer/automark-kafka" target="_blank" rel="noopener">Read the code</a>
+        </div>
+        <figure class="feature-fig">
+          <svg viewBox="0 0 400 260" aria-hidden="true">
+            <g class="box"><rect x="16" y="106" width="84" height="46"/><text x="58" y="134">api</text></g>
+            <path class="ink d" pathLength="1" d="M100 129 H140"/>
+            <path class="ink" d="M134 124 L140 129 L134 134"/>
+            <g class="log"><rect x="144" y="110" width="26" height="38"/><rect x="170" y="110" width="26" height="38"/><rect x="196" y="110" width="26" height="38"/><rect class="hot" x="222" y="110" width="26" height="38"/></g>
+            <text class="note" x="160" y="176">kafka topic</text>
+            <path class="ink d" pathLength="1" d="M252 120 L296 80 M252 138 L296 178"/>
+            <g class="box"><rect x="296" y="56" width="92" height="44"/><text x="342" y="83">analytics</text></g>
+            <g class="box"><rect x="296" y="158" width="92" height="44"/><text x="342" y="185">notify</text></g>
+            <text class="cap" x="16" y="30">EVENTS, NOT WAITING</text>
+          </svg>
+          <figcaption><span class="label">Fig. 5</span> Requests return at once; Kafka carries the follow-up work.</figcaption>
+        </figure>
+        <aside class="margin-note">Kafka takes the slow jobs, so the person clicking never has to wait for them.</aside>
+      </article>
+
+      <!-- 05 -->
+      <article class="page feature" id="alzheimers">
+        <div class="feature-num" aria-hidden="true">05</div>
+        <div class="feature-text">
+          <p class="kicker label">Medical imaging · PyTorch</p>
+          <h3>Alzheimer's MRI Detection</h3>
+          <p class="dek">A convolutional network that classifies stages of Alzheimer's from brain MRI slices — built to be honest about its accuracy, and to show its reasoning.</p>
+          <ul class="facts">
+            <li>Five-fold cross-validation grouped by patient, so no one's scans land in both training and testing.</li>
+            <li>Sampling balanced across classes and patients, with weighted label smoothing.</li>
+            <li>Two-stage fine-tuning, with the best model picked on patient-level macro F1.</li>
+            <li>Grad-CAM heatmaps that show which regions of the brain drove each prediction.</li>
+          </ul>
+          <p class="stack label">PyTorch · torchvision · scikit-learn · Grad-CAM</p>
+          <a class="read" href="https://github.com/ashrith-developer/alzheimers-detection" target="_blank" rel="noopener">Read the code</a>
+        </div>
+        <figure class="feature-fig">
+          <svg viewBox="0 0 400 260" aria-hidden="true">
+            <defs>
+              <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <line x1="0" y1="0" x2="0" y2="6" class="hatch-line"/>
+              </pattern>
+              <clipPath id="brainClip"><path d="M200 46 C140 40 96 72 92 118 C88 166 124 204 178 206 C190 207 196 198 200 190 C204 198 210 207 222 206 C276 204 312 166 308 118 C304 72 260 40 200 46Z"/></clipPath>
+            </defs>
+            <ellipse cx="160" cy="138" rx="50" ry="38" fill="url(#hatch)" clip-path="url(#brainClip)"/>
+            <path class="ink d" pathLength="1" d="M200 46 C140 40 96 72 92 118 C88 166 124 204 178 206 C190 207 196 198 200 190 C204 198 210 207 222 206 C276 204 312 166 308 118 C304 72 260 40 200 46Z"/>
+            <path class="ink thin" d="M200 50 V188 M140 80 C160 92 152 114 128 124 M260 80 C240 92 248 114 272 124 M134 168 C154 158 172 170 176 186 M266 168 C246 158 228 170 224 186"/>
+            <path class="acc" d="M128 120 L64 48"/>
+            <text class="note" x="14" y="38">model looked here</text>
+            <text class="cap" x="300" y="236">AXIAL SLICE</text>
+          </svg>
+          <figcaption><span class="label">Fig. 6</span> Grad-CAM, drawn as hatching: the region that drove the prediction.</figcaption>
+        </figure>
+        <aside class="margin-note">Splitting by patient, not by slice, keeps the scores honest — otherwise the model is tested on brains it has already seen.</aside>
+      </article>
+
+      <!-- 06 -->
+      <article class="page feature flip" id="licenselock">
+        <div class="feature-num" aria-hidden="true">06</div>
+        <div class="feature-text">
+          <p class="kicker label">Security · Python</p>
+          <h3>LicenseLock</h3>
+          <p class="dek">Software licences that can be checked entirely offline — signed by the publisher, verified by the client, and impossible to quietly roll back.</p>
+          <ul class="facts">
+            <li>Ed25519 signatures over canonical licence bytes, with encrypted PKCS#8 private keys.</li>
+            <li>Checks expiry, product, features and seat count against a trust store.</li>
+            <li>Rollback protection, plus a signed manifest for revoking licences.</li>
+            <li>Strict, grace and local-only policies, available as a CLI and a Python API.</li>
+          </ul>
+          <p class="stack label">Python · Ed25519 · Cryptography · CLI</p>
+          <a class="read" href="https://github.com/ashrith-developer/LicenseLock" target="_blank" rel="noopener">Read the code</a>
+        </div>
+        <figure class="feature-fig">
+          <svg viewBox="0 0 400 260" aria-hidden="true">
+            <g class="paper-doc"><rect x="56" y="40" width="140" height="180"/></g>
+            <path class="ink faint" d="M76 76 H176 M76 96 H166 M76 116 H172 M76 136 H150"/>
+            <path class="acc d" pathLength="1" d="M78 186 C88 168 98 196 110 178 S128 172 138 184 S154 176 170 182"/>
+            <text class="cap" x="76" y="62">LICENCE</text>
+            <path class="ink d" pathLength="1" d="M204 130 H246"/>
+            <path class="ink" d="M240 125 L246 130 L240 135"/>
+            <circle class="acc" cx="306" cy="130" r="52"/>
+            <circle class="acc thin" cx="306" cy="130" r="44"/>
+            <path class="acc thick d" pathLength="1" d="M284 130 L300 146 L330 114"/>
+            <text class="note" x="270" y="210">verified offline</text>
+          </svg>
+          <figcaption><span class="label">Fig. 7</span> A signed licence, stamped valid without ever calling home.</figcaption>
+        </figure>
+        <aside class="margin-note">No server is needed to check a licence — not even once.</aside>
+      </article>
+
+      <div class="page also">
+        <p><span class="label">Also on GitHub</span> A Monday.com business-intelligence agent, a journal app deployed on Kubernetes, and a shelf of ML experiments. <a class="read" href="https://github.com/ashrith-developer?tab=repositories" target="_blank" rel="noopener">See every repository</a></p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page about">
+      <div class="section-title">
+        <h2 class="label">About</h2>
+        <span class="rule"></span>
+      </div>
+      <div class="about-grid">
+        <blockquote class="pull">
+          “Most of my projects start with a model and end up as a <em>system</em>.”
+        </blockquote>
+        <div class="about-text">
+          <p>
+            I'm an AI engineering student at Amrita University. I'm happiest in the part of a project
+            that comes after the notebook: putting an API around a model, adding tracing to see what it's
+            doing, guardrails so it can't do damage, and containers so it runs anywhere.
+          </p>
+          <p>
+            Right now I'm most interested in agentic AI — agents that use tools and browsers safely —
+            and in making machine-learning systems observable once they're in production.
+          </p>
+        </div>
+
+        <div class="index">
+          <p class="label">Index of tools</p>
+          <dl>
+            <div><dt>Machine learning</dt><dd>PyTorch, PyTorch Geometric, scikit-learn, Grad-CAM</dd></div>
+            <div><dt>Agents &amp; LLMs</dt><dd>LangChain, LangGraph, LangSmith, MCP, Gemini, Groq</dd></div>
+            <div><dt>Backend</dt><dd>FastAPI, Flask, Express, MongoDB, Kafka</dd></div>
+            <div><dt>Infrastructure</dt><dd>Docker, Kubernetes, GitHub Actions, Render</dd></div>
+            <div><dt>Observability</dt><dd>OpenTelemetry, Prometheus, Grafana</dd></div>
+            <div><dt>Languages</dt><dd>Python, JavaScript, Java, C</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page contact">
+      <p class="label">Correspondence</p>
+      <h2 class="display">Write to <em>me.</em></h2>
+      <p class="contact-dek">Open to internships and collaborations in AI engineering and machine-learning systems.</p>
+      <ul class="contact-links">
+        <!-- TODO: add your email, LinkedIn and resume, e.g.
+        <li><a href="mailto:you@example.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="resume.pdf" target="_blank" rel="noopener">Résumé</a></li>
+        -->
+        <li><a href="https://github.com/ashrith-developer" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://instagram.com/ashrith_venkat" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="page colophon">
+    <p><span class="label">Colophon</span> Set in Instrument Serif and Newsreader. Hand-built with HTML, CSS and a little JavaScript. © <span class="year"></span> Ashrith.</p>
+    <a href="#top" class="label">Back to the cover ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
